@@ -1,8 +1,13 @@
-const Buttons = () => {
+import satData from "./satData";
+
+
+
+const Buttons = (displaySats, setSat, filterByType) => {
+
   return (
     <div>
-      <button>Placeholder Button</button>
-      <button>All Orbits</button>
+      <button>place holder</button>
+      <button onClick={setSat(satData)}>All Orbits</button>
       </div>
   );
 };
