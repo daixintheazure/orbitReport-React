@@ -2,12 +2,12 @@ import satData from "./satData";
 
 
 
-const Buttons = (displaySats, setSat, filterByType) => {
-
+const Buttons = (filterByType, setSat, displaySats) => {
   return (
     <div>
+      
       <button>place holder</button>
-      <button onClick={setSat(satData)}>All Orbits</button>
+      <button onClick={setSat}>All Orbits</button>
       </div>
   );
 };
