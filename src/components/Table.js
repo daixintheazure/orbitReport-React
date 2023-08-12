@@ -1,12 +1,14 @@
-const Table = ({ sat }) => {
-  const satInfo = sat.map(stuff => {
-    return (
-      <div>
-        <tr>
-          <td>{stuff.name}</td>
-        </tr>
-      </div>
+import './styling.css';
 
+const Table = ({ sat }) => {
+  const satInfo = sat.map(stuff, id => {
+    return (
+        <tr key={id}>
+          <td>{stuff.name}</td>
+          <td>{stuff.type}</td>
+          <td>{stuff.launchDate}</td>
+          <td>{stuff.orbitType}</td>
+        </tr>
     );
   });
   return (
@@ -14,18 +16,15 @@ const Table = ({ sat }) => {
        <thead>
         <tr>
           <th>Name</th>
+        </tr>
+        <tr>
           <th>Type of Satellite</th>
           <th>Lanunch Date</th>
           <th>Status</th>
         </tr>
         </thead>
         <tbody>
-        <tr key={sat.id}>
           {satInfo}
-        </tr>
-        <tr>
-          <td>hi</td>
-        </tr>
         </tbody>
       </table>
   );

@@ -1,4 +1,5 @@
 import satData from "./satData";
+import './styling.css';
 
 const Buttons = (props) => {
   const displaySats = props.displaySats;
