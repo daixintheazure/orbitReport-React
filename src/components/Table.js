@@ -9,7 +9,7 @@ const Table = ({ sat }) => {
           <td>{stuff.launchDate}</td>
           <td>{stuff.orbitType}</td>
         </tr>
-  )})
+  )});
     
   
 
