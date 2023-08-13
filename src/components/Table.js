@@ -30,7 +30,7 @@ const Table = ({ sat }) => {
         <tr>
           <th>Name</th>
           <th>Type of Satellite</th>
-          <th>Lanunch Date</th>
+          <th>Launch Date</th>
           <th>Status</th>
         </tr>
         </thead>
