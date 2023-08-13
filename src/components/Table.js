@@ -1,13 +1,24 @@
 import './styling.css';
 
 const Table = ({ sat }) => {
-  const satInfo = sat.map(function(stuff) {
+  function status (props){
+    if(props){
+      return( 
+        "Active"
+      );
+    } else if (!props){
+      return(
+        "Inactive"
+      );
+    }
+  }
+  const satInfo = sat.map(function(stuff, id) {
     return (
-        <tr>
+        <tr key={id}>
           <td>{stuff.name}</td>
           <td>{stuff.type}</td>
           <td>{stuff.launchDate}</td>
-          <td>{stuff.orbitType}</td>
+          <td>{status(stuff.operational)}</td>
         </tr>
   )});
     
